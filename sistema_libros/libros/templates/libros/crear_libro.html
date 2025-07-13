@@ -51,26 +51,22 @@
         </form>
     </div>
     <script>
+        (() => {
+            'use strict';
         
-        (function () {
-            'use strict'
-
-           
-            var forms = document.querySelectorAll('.needs-validation')
-
-          
-            Array.prototype.slice.call(forms)
-                .forEach(function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
-    </script>
+            const forms = document.querySelectorAll('.needs-validation');
+        
+            forms.forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+        
+                    form.classList.add('was-validated');
+                });
+            });
+        })();
+        </script>        
 </body>
 </html>
