@@ -21,5 +21,5 @@ from libros import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('libros/', include('libros.urls')),
-    path('', views.lista_libros, name='home'),  # Redirige la URL raíz a la lista de libros
+    path('', views.lista_libros, name='home'),  
 ]
