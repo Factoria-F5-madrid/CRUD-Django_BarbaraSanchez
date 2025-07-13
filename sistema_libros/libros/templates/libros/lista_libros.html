@@ -7,11 +7,12 @@
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="background-shape"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="{% url 'lista_libros' %}">Biblioteca</a>
+            <a class="navbar-brand" href="{% url 'lista_libros' %}">ReadLab</a>
             <div class="navbar-nav">
-                <a class="nav-link" href="{% url 'lista_libros' %}">Lista de Libros</a>
+                <div class="navbar-divider"></div>
                 <a class="nav-link" href="{% url 'crear_libro' %}">Crear Libro</a>
                 <a class="nav-link" href="/admin/">Admin</a>
             </div>

@@ -1,41 +1,104 @@
-.fade-in {
-    animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 body {
     background-color: #f0f8ff;
     font-family: 'Georgia', serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.background-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: #6f42c1;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    z-index: -1;
+}
+
+.navbar {
+    background-color: #6f42c1;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+   
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: color 0.4s ease;
+}
+
+.nav-link:hover {
+    color: #ced4da;
+}
+
+.navbar-divider {
+    display: none;
 }
 
 .container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    max-width: 1200px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-h1 {
+.card {
+    border: none;
+    border-radius: 1rem;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
     color: #333;
-    text-align: center;
-    margin-bottom: 20px;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+.card-text {
+    color: #666;
+    font-size: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #6f42c1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 0.95rem;
     transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-.btn-secondary {
-    margin-left: 10px;
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #5a32a3;
 }
