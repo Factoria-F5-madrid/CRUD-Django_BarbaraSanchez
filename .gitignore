@@ -1,0 +1,54 @@
+# Archivos y directorios de Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Entorno virtual
+venv/
+env/
+ENV/
+.venv/
+
+# Base de datos SQLite (y otras bases de datos locales)
+db.sqlite3
+*.sqlite3
+
+# Archivos de configuración sensibles
+*.env
+sistema_libros/settings.py  # Opcional, si contiene claves sensibles
+local_settings.py
+
+# Archivos generados por el sistema operativo
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Archivos de editores y IDEs
+.idea/  # PyCharm
+.vscode/  # Visual Studio Code
+*.swp
+*.swo
+
+# Archivos de caché y temporales
+*.log
+*.pot
+*.cache
+/staticfiles/
+
+# Carpeta de medios (si usas media para subir archivos)
+media/
+
+# Archivos de compilación estática (si usas collectstatic)
+staticfiles/
+collected_static/
+
+# Archivos de pruebas o cobertura
+coverage/
+.coverage
+htmlcov/
+
+# Otros
+*.bak
+*.backup

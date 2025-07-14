@@ -441,3 +441,45 @@ Crea las siguientes plantillas:
 3. Accede al admin en [http://localhost:8000/admin/](http://localhost:8000/admin/) y añade algunos libros.
 
 4. Visita [http://localhost:8000/libros/](http://localhost:8000/libros/) para ver la lista de libros y [http://localhost:8000/libros/1/](http://localhost:8000/libros/1/) para ver los detalles de un libro (reemplaza '1' con el ID de un libro existente).
+
+## Mejoras de Diseño
+
+En este proyecto, se han realizado varias mejoras de diseño para modernizar la apariencia de la aplicación:
+
+- **Uso de Bootstrap**: Se ha utilizado Bootstrap para estilizar formularios, proporcionando un aspecto moderno y responsivo.
+- **Personalización del Navbar**: El navbar ha sido personalizado con un fondo degradado y el texto "ReadLab", con enlaces alineados a la derecha.
+- **Estilos de Botones**: Los botones en el formulario "Crear Libro" han sido estilizados para que coincidan en color, utilizando un tono púrpura.
+
+## Funcionalidades Adicionales
+
+Además de las mejoras de diseño, se han implementado las siguientes funcionalidades adicionales:
+
+- **Animaciones**: Se han añadido animaciones para mejorar la experiencia del usuario.
+- **Esquemas de Color**: Se ha implementado un esquema de color consistente en toda la aplicación.
+- **Formularios Mejorados**: Los formularios han sido mejorados para una mejor usabilidad y estética.
+
+## Instrucciones de Ejecución
+
+Para ejecutar este proyecto, sigue los siguientes pasos:
+
+1. Asegúrate de tener Django instalado:
+   ```bash
+   pip install django
+   ```
+
+2. Navega al directorio del proyecto y ejecuta el servidor de desarrollo:
+   ```bash
+   cd sistema_libros
+   python3 manage.py runserver
+   ```
+
+3. Abre tu navegador y visita `http://127.0.0.1:8000/` para ver la aplicación en acción.
+
+## Capturas de Pantalla
+
+A continuación se presentan algunas capturas de pantalla que ilustran las mejoras de diseño y funcionalidad:
+
+- **Formulario de Creación de Libro**: ![Formulario de Creación de Libro](ruta/a/captura1.png)
+- **Navbar Personalizado**: ![Navbar Personalizado](ruta/a/captura2.png)
+
+---
